@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>网络报名</title>
+		<link rel="stylesheet" href="bootstrap_3.3.5/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/Registration.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/Registration.js"></script>
+	</head>
+	<body>
+			<div class="container-fluid">
+			<div class="container con-wrap">
+				<div class="con-title hidden-xs">
+					<h3>网络报名</h3>
+				</div>
+				<div class="con-content">
+					<div class="step"><span>第四步：确认你所选课程</span><a href="index.html">[点击返回首页]</a></div>
+					<div class="main-content">
+					<div class="tip">
+							<p>您可以选择网银缴费，也可以在网上预约到现场缴费</p>
+							<p>若想继续选择班级，可以点击继续选择班级，进入选择报名班级界面</p>
+						</div>
+						<div class="course-table">
+							<table class="table table-bordered table-hover table-responsive">
+								<thead>
+									<tr>
+										<th></th>
+										<th>已选课程</th>
+										<th>任课老师</th>
+										<th>上课时间</th>
+										<th>人数</th>
+										<th>学费</th>
+									</tr>
+								</thead>
+								<tbody class="select-tbody-yet">
+									<tr>
+										<td><input type="checkbox" name="" id="" value="" /></td>
+										<td>计算机</td>
+										<td>王五</td>
+										<td>星期三下午</td>
+										<td>23</td>
+										<td class="tuition-b">6002</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" id="" value="" /></td>
+										<td>计算机</td>
+										<td>王五</td>
+										<td>星期三下午</td>
+										<td>23</td>
+										<td class="tuition-b">6002</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td></td>
+										<td>学费合计</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="all-count-b">6002</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<div class="chinabank-wrap">
+							<h5>1.网银缴费</h5>
+							<p class="chinabank-tip">点击网银缴费按钮，进入网银缴费流程，直接使用网银缴费完成报名。</p>
+							<div class="btn-wrap">
+								<a href="#" class="btn btn-default">网银缴费</a>
+								<a href="thirdStep.html" class="btn btn-default">继续选择报读班级</a>
+							</div>
+						</div>
+						<div class="registration">
+							<h5>2.现场缴费</h5>
+							<p class="chinabank-tip">填写预约报名时间后，点击“现场缴费”按钮确认，并在预约时间内到学校现场缴费完成报名。</p>
+							<div class="clearfix">
+								<div class="form-group clearfix">
+									<label for="" class="col-md-3 col-sm-12 col-xs-12 control-label">预约缴费时间：</label>
+									<div class="col col-md-3 col-sm-6 col-xs-6">
+										<input type="date" class="form-control" placeholder="请选择时间" />
+									</div>
+									<div class="col col-md-3 col-sm-6 col-xs-6">
+										<select name="" class="form-control">
+											<option value="am">上午</option>
+											<option value="pm">下午</option>
+										</select>
+									</div>
+									<div class="col col-md-3" style="height:34px;line-height: 34px;text-align: center;"><span>剩余名额</span><span>22</span>人</div>
+								</div>
+							</div>
+							<div class="btn-wrap">
+								<a href="#" class="btn btn-default">现场缴费</a>
+								<a href="thirdStep.html" class="btn btn-default">继续选择报读班级</a>
+							</div>
+						</div>
+					<!--<div class="article-wrap">
+							
+					</div>-->
+					<div class="btn-wrap">
+						<a href="javascript:;" class="btn btn-default prev-step">上一步</a>
+						<a href="javascript:;" class="btn btn-default next-step" position="succeed">下一步</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

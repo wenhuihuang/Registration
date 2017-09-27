@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网络报名</title>
+    <link rel="stylesheet" href="bootstrap_3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/Registration.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/Registration.js"></script>
+    <script>
+        $(function () {
+            $('#xs-menu-btn').on('click', function () {
+                $('.cover').show();
+                $('.xs-right-menu').addClass('xs-right-menu-active');
+            })
+            $('.cover').on('click', function () {
+                $('.cover').hide();
+                $('.xs-right-menu').removeClass('xs-right-menu-active');
+            })
+        })
+    </script>
+</head>
+
+<body>
+</body>
+<div class="header container-fluid">
+
+    <div class="row">
+        <div class="col-md-1 col-sm-2 col-xs-2">logo</div>
+        <div class="col-md-6 col-sm-4 col-xs-5">广州市老年干部大学网络报名</div>
+        <div class="col-md-3 col-sm-3 col-xs-3">您好，王小明</div>
+        <div class="col-md-2 col-sm-3 hidden-xs">
+            <button type="button" class="btn btn-primary">回首页</button>
+            <button type="button" class="btn btn-danger">退出</button>
+        </div>
+        <div class="visible-xs-block col-xs-2 menu-btn-wrap">
+            <a href="javascript:;" id="xs-menu-btn">三</a>
+        </div>
+    </div>
+</div>
+<div class="body container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-3 xs-right-menu md-left-menu">
+            <div class="row"><a href="" class="btn btn-primary">我要报名</a></div>
+            <div class="row"><a href="" class="btn btn-primary">我要缴费</a></div>
+            <div class="row"><a href="" class="btn btn-primary">查看已报名班级</a></div>
+            <div class="row"><a href="" class="btn btn-primary">学员资料修改</a></div>
+            <div class="row"><a href="" class="btn btn-primary">退出登录</a></div>
+
+        </div>
+        <div class="col-md-10 col-sm-9 col-xs-12">
+            右边
+        </div>
+    </div>
+</div>
+<div class="footer">
+
+</div>
+<div class="cover"></div>
+
+</html>

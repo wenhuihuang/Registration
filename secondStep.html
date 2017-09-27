@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>网络报名</title>
+		<link rel="stylesheet" href="bootstrap_3.3.5/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/Registration.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/Registration.js"></script>
+	</head>
+	<body>
+			<div class="container-fluid">
+			<div class="container con-wrap">
+				<div class="con-title hidden-xs">
+					<h3>网络报名</h3>
+				</div>
+				<div class="con-content">
+					<div class="step"><span>第二步：填写报名资料</span><a href="index.html">[点击返回首页]</a></div>
+					<div class="main-content">
+					<div class="article-wrap">
+						<form action="" method="post" class="form-horizontal">
+						<!--
+                        	时间：2015-11-23
+                        	描述：第一部分
+                        -->
+						<div class="article-one">
+							<h5 class="article-title">1.请填写您的基本资料(以下带<b class="red">*</b>的是<b class="red">必填项</b>)</h5>
+							<div class="article-content">
+										<div class="form-group">
+											<label for="card" class="control-label col-md-3 col-sm-3 col-xs-4">身份证：</label>
+											<div class="col-md-6 col-sm-9 col-xs-8">
+												<input type="number" id="card" name="card" placeholder="请输入身份证号" class="form-control" />
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group radio-wrap">
+											<span class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>性别：</span>
+												<div class="col-md-3 radio">
+													<label for="sex1" class="control-label">
+														<input type="radio" name="sex" id="sex1" value="男" checked="true" />
+														男
+													</label>
+												</div>
+												<div class="col-md-3 radio">
+													<label for="sex2" class="control-label">
+														<input type="radio" name="sex" id="sex2" value="女" />
+														女
+													</label>
+												</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="name" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>姓名：</label>
+											<div class="col-md-6 col-sm-9 col-xs-8">
+												<input type="text" id="name" name="name" placeholder="请输入姓名" class="form-control" />
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="birthday" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>请选择出生日期</label>
+											<div class="col-md-6 col-sm-9 col-xs-8">
+												<input type="date" id="birthday" name="birthday" class="form-control"/>
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="phone" class="col-md-3  col-sm-3 col-xs-4 control-label"><b class="red">*</b>手机：</label>
+											<div class="col-md-6  col-sm-9 col-xs-8">
+												<input type="number" name="phone" id="phone" placeholder="请输入手机" class="form-control" />
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="contact" class="col-md-3  col-sm-3 col-xs-4 control-label"><b class="red">*</b>家庭联系人：</label>
+											<div class="col-md-6  col-sm-9 col-xs-8">
+												<input type="text" name="contact" id="contact" class="form-control" placeholder="请输入家庭联系人" />
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="contact_tel" class="control-label col-md-3  col-sm-3 col-xs-4"><b class="red">*</b>联系人电话：</label>
+											<div class="col-md-6  col-sm-9 col-xs-8">
+												<input type="number" name="contact_tel" id="contact_tel" class="form-control" placeholder="请输入联系人电话" />
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="native_place" class="control-label col-md-3  col-sm-3 col-xs-4"><b class="red">*</b>籍贯：</label>
+											<div class="col-md-6  col-sm-9 col-xs-8">
+												<input type="text" id="native_place" name="native_place" class="form-control" placeholder="请输入籍贯" />
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="nation" class="control-label col-md-3  col-sm-3 col-xs-4"><b class="red">*</b>民族：</label>
+											<div class="col-md-6  col-sm-9 col-xs-8">
+												<select name="nation" class="form-control">
+													<option value="汉族">汉族</option>
+												</select>
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="politics" class="control-label col-md-3  col-sm-3 col-xs-4"><b class="red">*</b>政治面貌：</label>
+											<div class="col-md-6 col-sm-9 col-xs-8">
+												<select name="politics" class="form-control">
+													<option value="团员">团员</option>
+												</select>
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="education" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>文化程度：</label>
+											<div class="col-md-6 col-sm-9 col-xs-8">
+												<select name="education" class="form-control">
+													<option value="大专">大专</option>
+												</select>
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="disease" class="control-label col-md-3 col-sm-3 col-xs-4">疾病史：</label>
+											<div class="col-md-6 col-sm-9 col-xs-8">
+												<input type="text" name="disease" id="disease" placeholder="请输入疾病史" class="form-control" />
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="work" class="control-label col-md-3 col-sm-3 col-xs-4">原工作单位：</label>
+											<div class="col-md-6 col-sm-9 col-xs-8">
+												<input type="text" name="work" id="work" placeholder="请输入原工作单位" class="form-control" />
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="position" class="control-label col-md-3 col-sm-3 col-xs-4">原工作职位：</label>
+											<div class="col-md-6 col-sm-9 col-xs-8">
+												<input type="text" name="position" id="position" placeholder="请输入原工作职位" class="form-control" />
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="work_status" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>在职状况：</label>
+											<div class="col-md-6 col-sm-9 col-xs-8">
+												<select name="work_status" class="form-control">
+													<option value="在职">在职</option>
+												</select>
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="company_type" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>原单位类型：</label>
+											<div class="col-md-6 col-sm-9 col-xs-8">
+												<select name="company_type" id="company_type" class="form-control">
+													<option value="私有">私有</option>
+												</select>
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="rank" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>职级：</label>
+											<div class="col-md-6 col-sm-9 col-xs-8">
+												<select name="rank" id="rank" class="form-control">
+													<option value="经理">经理</option>
+												</select>
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="form-group">
+											<label for="rank_name" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>职称：</label>
+											<div class="col-md-6 col-sm-9 col-xs-8">
+												<select name="rank_name" class="form-control">
+													<option value="私有">私有</option>
+												</select>
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+									
+							</div>
+						</div>
+						<!--第二部分-->
+						<div class="article-two">
+							<h5 class="article-title">2.请填写您的联系方式(以下为非必填项)</h5>
+							<div class="article-content">
+								<div class="form-group">
+									<label for="home_phone" class="control-label col-md-3 col-sm-3 col-xs-4">住宅电话：</label>
+									<div class="col-md-6 col-sm-9 col-xs-8">
+										<input type="number" id="home_phone" name="home_phone" placeholder="请输入住宅电话" class="form-control" />
+									</div>
+									<div class="col-mnd-3"></div>
+								</div>
+								<div class="form-group">
+									<label for="family_address" class="control-label col-md-3 col-sm-3 col-xs-4">家庭住址：</label>
+									<div class="col-md-6 col-sm-9 col-xs-8">
+										<input type="text" id="family_address" name="family_address" placeholder="请输入家庭住址" class="form-control" />
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+								<div class="form-group">
+									<label for="now_address" class="control-label col-md-3 col-sm-3 col-xs-4">现居住址：</label>
+									<div class="col-md-6 col-sm-9 col-xs-8">
+										<input type="text" id="now_address" name="now_address" placeholder="请输入现居住址" class="form-control" />
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</div>
+						</div>
+						<!--第三部分-->
+						<div class="article-three">
+							<h5 class="article-title">3.请填写其它资料(以下为非必填项)</h5>
+							<div class="article-content">
+								<div class="form-group">
+									<label for="speciality" class="control-label col-md-3 col-sm-3 col-xs-4">特长：</label>
+									<div class="col-md-6 col-sm-9 col-xs-8">
+										<input type="text" id="speciality" name="speciality" placeholder="请输入特长" class="form-control" />
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+								<div class="form-group">
+									<label for="remarks" class="control-label col-md-3 col-sm-3 col-xs-4">备注：</label>
+									<div class="col-md-6 col-sm-9 col-xs-8">
+										<input type="text" id="remarks" name="remarks" placeholder="请输入备注" class="form-control" />
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</div>
+						</div>
+						</form>
+					</div>
+					<div class="btn-wrap">
+						<a href="javascript:;" class="btn btn-default prev-step">上一步</a>
+						<a href="javascript:;" class="btn btn-default next-step" position="thirdStep">下一步</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
