@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>网络报名</title>
     <link rel="stylesheet" href="bootstrap_3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
     <link rel="stylesheet" type="text/css" href="css/Registration.css" />
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/Registration.js"></script>
     <script>
+        function resetSize(){
+            var bodyHeight = $(window).height() - $('.header').height() -1;
+            $('.body').css({'height':bodyHeight})
+            $('.body-height-fluid').css({'height':bodyHeight})
+        }
         $(function () {
             $('#xs-menu-btn').on('click', function () {
                 $('.cover').show();
@@ -18,6 +24,16 @@
             $('.cover').on('click', function () {
                 $('.cover').hide();
                 $('.xs-right-menu').removeClass('xs-right-menu-active');
+            })
+            $('.close-menu').on('click',function(){
+                $('.cover').hide();
+                $('.xs-right-menu').removeClass('xs-right-menu-active');
+            })
+
+            //调节主体高度
+            resetSize()
+            $(window).resize(function(){
+                resetSize()
             })
         })
     </script>
@@ -28,30 +44,36 @@
 <div class="header container-fluid">
 
     <div class="row">
-        <div class="col-md-1 col-sm-2 col-xs-2">logo</div>
-        <div class="col-md-6 col-sm-4 col-xs-5">广州市老年干部大学网络报名</div>
-        <div class="col-md-3 col-sm-3 col-xs-3">您好，王小明</div>
-        <div class="col-md-2 col-sm-3 hidden-xs">
+        <div class="col-md-1 col-sm-2 col-xs-3"><img class="logo" src="./img/logo.png" alt=""></div>
+        <div class="col-md-6 col-sm-4 col-xs-7 xs-header-middle">
+            <p class="title">广州市老年干部大学网络报名</p>
+            <p class="visible-xs-block" style="margin:0;">您好，王小明</p>
+        </div>
+        <div class="col-md-3 col-sm-3 hidden-xs header-name">您好，王小明</div>
+        <div class="col-md-2 col-sm-3 hidden-xs header-bottom-group">
             <button type="button" class="btn btn-primary">回首页</button>
             <button type="button" class="btn btn-danger">退出</button>
         </div>
         <div class="visible-xs-block col-xs-2 menu-btn-wrap">
-            <a href="javascript:;" id="xs-menu-btn">三</a>
+            <a href="javascript:;" id="xs-menu-btn"><i class="iconfont">&#xe64a;</i></a>
         </div>
     </div>
 </div>
 <div class="body container-fluid">
-    <div class="row">
-        <div class="col-md-2 col-sm-3 xs-right-menu md-left-menu">
-            <div class="row"><a href="" class="btn btn-primary">我要报名</a></div>
-            <div class="row"><a href="" class="btn btn-primary">我要缴费</a></div>
-            <div class="row"><a href="" class="btn btn-primary">查看已报名班级</a></div>
-            <div class="row"><a href="" class="btn btn-primary">学员资料修改</a></div>
-            <div class="row"><a href="" class="btn btn-primary">退出登录</a></div>
+    <div class="row body-height-fluid">
+        <div class="col-md-3 col-sm-3 xs-right-menu md-left-menu">
+            <div class="xs-right-menu-header visible-xs-block">
+                    <i class="iconfont close-menu">&#xe63c;</i>
+            </div>
+            <div class="row"><a href="" class="btn btn-primary btn-lg">我要报名</a></div>
+            <div class="row"><a href="" class="btn btn-primary btn-lg">我要缴费</a></div>
+            <div class="row"><a href="" class="btn btn-primary btn-lg">查看已报名班级</a></div>
+            <div class="row"><a href="" class="btn btn-primary btn-lg">学员资料修改</a></div>
+            <div class="row"><a href="" class="btn btn-danger btn-lg">退出登录</a></div>
 
         </div>
-        <div class="col-md-10 col-sm-9 col-xs-12">
-            右边
+        <div class="col-md-9 col-sm-9 col-xs-12 md-right-content">
+            <iframe src="./select_type.html" frameborder="0" scrolling="yes" style="width:100%;height:99%"></iframe>
         </div>
     </div>
 </div>
