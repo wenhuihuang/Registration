@@ -3,18 +3,23 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>网络报名</title>
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <link rel="stylesheet" href="bootstrap_3.3.5/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="css/Registration.css" />
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/Registration.js"></script>
     <script>
-        function resetSize(){
-            var bodyHeight = $(window).height() - $('.header').height() -1;
-            $('.body').css({'height':bodyHeight})
-            $('.body-height-fluid').css({'height':bodyHeight})
+        function resetSize() {
+            var bodyHeight = $(window).height() - $('.header').height() - 1;
+            $('.body').css({ 'height': bodyHeight })
+            $('.body-height-fluid').css({ 'height': bodyHeight })
         }
         $(function () {
             $('#xs-menu-btn').on('click', function () {
@@ -25,14 +30,14 @@
                 $('.cover').hide();
                 $('.xs-right-menu').removeClass('xs-right-menu-active');
             })
-            $('.close-menu').on('click',function(){
+            $('.close-menu').on('click', function () {
                 $('.cover').hide();
                 $('.xs-right-menu').removeClass('xs-right-menu-active');
             })
 
             //调节主体高度
             resetSize()
-            $(window).resize(function(){
+            $(window).resize(function () {
                 resetSize()
             })
         })
@@ -63,17 +68,18 @@
     <div class="row body-height-fluid">
         <div class="col-md-3 col-sm-3 xs-right-menu md-left-menu">
             <div class="xs-right-menu-header visible-xs-block">
-                    <i class="iconfont close-menu">&#xe63c;</i>
+                <i class="iconfont close-menu">&#xe63c;</i>
             </div>
             <div class="row"><a href="" class="btn btn-primary btn-lg">我要报名</a></div>
             <div class="row"><a href="" class="btn btn-primary btn-lg">我要缴费</a></div>
-            <div class="row"><a href="" class="btn btn-primary btn-lg">查看已报名班级</a></div>
+            <div class="row"><a href="./thirdStep.html" target="iframe" class="btn btn-primary btn-lg">选择班级</a></div>
+            <div class="row"><a href="./fourStep.html" target="iframe" class="btn btn-primary btn-lg">查看已报名班级</a></div>
             <div class="row"><a href="" class="btn btn-primary btn-lg">学员资料修改</a></div>
             <div class="row"><a href="" class="btn btn-danger btn-lg">退出登录</a></div>
 
         </div>
         <div class="col-md-9 col-sm-9 col-xs-12 md-right-content">
-            <iframe src="./select_type.html" frameborder="0" scrolling="yes" style="width:100%;height:99%"></iframe>
+            <iframe src="./select_type.html" frameborder="0" scrolling="yes" style="width:100%;height:99%" name="iframe"></iframe>
         </div>
     </div>
 </div>
