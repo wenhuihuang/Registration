@@ -1,10 +1,26 @@
+//倒计时
+var timer ;
+function countDown(self,total,text){
+	var btn_text = $(self).text();
+	$(self).attr('disabled','true').text(total+'秒'+(text?text:''))
+	var t = total;
+	timer = setInterval(function(){
+		t--
+		$(self).text(t+'秒'+(text?text:''))
+		if(t <= 0){
+			clearInterval(timer);
+			$(self).removeAttr('disabled').text(btn_text);
+		}
+	},1000)
+}
 $(function(){
 	//检查是否同意条约
 	$(".agree-submit").click(function(){
 		if($("#agree").is(":checked")){
+			
 			location.href="./Firstep.html";
 		}else{
-			alert("请选择同意");
+			alert("请选中“我已仔细阅读并同意遵守”");
 		}
 	})
 	//返回上页

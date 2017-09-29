@@ -32,6 +32,7 @@ th,td{
 	color: #333;
 	font-weight: bold;
 	margin:0;
+	margin-top:20px;
 }
 .con-content{
 	border:2px solid #6DB7E2;
@@ -211,7 +212,7 @@ table{
 .md-right-content{
 	height:100%;
 	overflow: hidden;
-	padding-top:20px;
+	padding-top:0px;
 	padding-bottom:20px;
 }
 .md-left-menu .row{
