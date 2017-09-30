@@ -218,19 +218,22 @@ table{
 .md-left-menu .row{
 	width:100%;
 	margin:25px auto;
+	text-align:center;
 }
 .md-left-menu .row .btn{
 	width:100%;
+	text-align:left;
 }
 .title{
 	font-size:16px;
 	font-weight:bold;
 }
 .header-name{
-	text-align:center;
+	text-align:right;
+	margin-right:10px;
 }
 .header-bottom-group{
-	text-align:center;
+	text-align:right;
 }
 .header-bottom-group .btn{
 	margin-left:4px;
@@ -287,7 +290,18 @@ h6{
 .table>tbody>tr>td{
 	line-height: 34px;
 }
-
+.md-left-menu a.active{
+	color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+.md-left-menu .iconfont{
+	font-size: 18px;
+	margin-right:20px;
+}
+.header-bottom-group .iconfont{
+	margin-right:8px;
+}
 @media only screen and (max-width:767px) {
 	th,td{
 		padding:5px 0 !important;
@@ -514,10 +528,35 @@ h6{
 		margin-left:2px;
 		margin-right:2px;
 	}
+	.md-left-menu .row .btn{
+		width:210px;
+	}
 }
 @media only screen and (min-width: 1200px) {
 	.container{
 		/*background: yellow;*/
+	}
+	.md-left-menu .row .btn{
+		width:270px;
+		padding-left:50px;
+	}
+}
+@media only screen and (min-width: 1400px) {
+	.container{
+		/*background: yellow;*/
+	}
+	.md-left-menu .row .btn{
+		width:300px;
+		padding-left:60px;
+	}
+}
+@media only screen and (min-width: 1700px) {
+	.container{
+		/*background: yellow;*/
+	}
+	.md-left-menu .row .btn{
+		width:400px;
+		padding-left:60px;
 	}
 }
 
