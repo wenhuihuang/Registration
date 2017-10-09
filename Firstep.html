@@ -1,49 +1,83 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>网络报名</title>
-		<link rel="stylesheet" href="bootstrap_3.3.5/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/Registration.css"/>
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
-		<script type="text/javascript" src="js/Registration.js"></script>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="con-wrap">
-				<div class="con-title hidden-xs">
-					<h3>网络报名</h3>
-				</div>
-				<div class="con-content">
-					<div class="step"><span>您好，欢迎登录！</span><a href="index.html">[点击返回首页]</a></div>
-					<div class="main-content">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>网络报名</title>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+	<link rel="stylesheet" href="bootstrap_3.3.5/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/Registration.css" />
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/Registration.js"></script>
+	<style>
+		@media only screen and (max-width: 768px) {
+			div.header .xs-header-middle {
+				margin-top: 33px;
+			}
+			.step {
+				top: 106px;
+			}
+
+			.main-content {
+				top: 154px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header container-fluid">
+
+		<div class="row">
+			<div class="col-md-1 col-sm-2 col-xs-3"><img class="logo" src="./img/logo.png" alt=""></div>
+			<div class="col-md-6 col-sm-5 col-xs-7 xs-header-middle">
+				<p class="title">广州市老年干部大学网络报名</p>
+			</div>
+
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="con-wrap">
+			<!-- <div class="con-title hidden-xs">
+				<h3>网络报名</h3>
+			</div> -->
+			<div class="con-content">
+				<div class="step"><span>您好，欢迎登录！</span><a href="index.html">[点击返回首页]</a></div>
+				<div class="main-content">
 					<div class="article-wrap">
 						<h5 class="article-title">请填写身份证号及密码登录系统</h5>
 						<div class="article-content">
-								<form action="" method="post" class="form-horizontal">
-									<div class="form-group">
-										<label for="name" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>身份证号码：</label>
-										<div class="col-md-6 col-sm-9 col-xs-8">
-											<input type="text" id="name" name="name" placeholder="请输入身份证号码" class="form-control">
-										</div>
-										<div class="col-md-3"></div>
+							<form action="" method="post" class="form-horizontal">
+								<div class="form-group">
+									<label for="name" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>身份证号码：</label>
+									<div class="col-md-6 col-sm-9 col-xs-8">
+										<input type="text" id="name" name="name" placeholder="请输入身份证号码" class="form-control">
 									</div>
-									<div class="form-group">
-										<label for="card" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>密码：</label>
-										<div class="col-md-6 col-sm-9 col-xs-8">
-											<input type="password" id="card" name="card" placeholder="请输入登录密码" class="form-control" />
-										</div>
-										<div class="col-md-3"></div>
+									<div class="col-md-3"></div>
+								</div>
+								<div class="form-group">
+									<label for="card" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>密码：</label>
+									<div class="col-md-6 col-sm-9 col-xs-8">
+										<input type="password" id="card" name="card" placeholder="请输入登录密码" class="form-control" />
 									</div>
-									<div class="form-group">
-										<label for="auth_code" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>验证码：</label>
-										<div class="col col-md-6 col-sm-6 col-xs-3">
-											<input type="text" id="auth_code" name="auth_code" placeholder="请输入验证码" class="form-control" />
-										</div>
-										<div class="col col-md-3 col-sm-3 col-xs-5 auth-img"><img src="img/verify.png"></div>
+									<div class="col-md-3"></div>
+								</div>
+								<div class="form-group">
+									<label for="card" class="control-label col-md-3 col-sm-3 col-xs-4">温馨提示：</label>
+									<div class="col-md-6 col-sm-9 col-xs-8" style="padding-top:7px;">
+										首次登录，默认密码为<span style="color:#F57625">123456</span>。登录后，必须修改密码！
 									</div>
-								</form>
+									<div class="col-md-3"></div>
+								</div>
+								<div class="form-group">
+									<label for="auth_code" class="control-label col-md-3 col-sm-3 col-xs-4"><b class="red">*</b>验证码：</label>
+									<div class="col col-md-6 col-sm-6 col-xs-3">
+										<input type="text" id="auth_code" name="auth_code" placeholder="请输入验证码" class="form-control" />
+									</div>
+									<div class="col col-md-3 col-sm-3 col-xs-5 auth-img"><img src="img/verify.png"></div>
+								</div>
+							</form>
 						</div>
 					</div>
 					<div class="btn-wrap">
@@ -51,9 +85,10 @@
 						<a href="javascript:;" class="btn btn-default btn-lg next-step" position="secondStep">下一步</a>
 						<!-- <a href="javascript:;" class="btn btn-default prev-step">找回密码</a> -->
 					</div>
-					</div>
 				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>

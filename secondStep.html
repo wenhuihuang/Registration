@@ -12,9 +12,9 @@
 	<body>
 			<div class="container-fluid">
 			<div class="container con-wrap">
-				<div class="con-title hidden-xs">
+				<!-- <div class="con-title hidden-xs">
 					<h3>网络报名</h3>
-				</div>
+				</div> -->
 				<div class="con-content">
 					<div class="step"><span>第二步：填写报名资料</span><a href="index.html">[点击返回首页]</a></div>
 					<div class="main-content">
@@ -39,13 +39,13 @@
 												<div class="col-md-3 radio">
 													<label for="sex1" class="control-label">
 														<input type="radio" name="sex" id="sex1" value="男" checked="true" />
-														男
+														<span>男</span
 													</label>
 												</div>
 												<div class="col-md-3 radio">
 													<label for="sex2" class="control-label">
 														<input type="radio" name="sex" id="sex2" value="女" />
-														女
+														<span>女</span>
 													</label>
 												</div>
 											<div class="col-md-3"></div>
@@ -67,7 +67,7 @@
 										<div class="form-group">
 											<label for="phone" class="col-md-3  col-sm-3 col-xs-4 control-label"><b class="red">*</b>手机：</label>
 											<div class="col-md-6  col-sm-9 col-xs-8">
-												<input type="number" name="phone" id="phone" placeholder="请输入手机" class="form-control" />
+												<input type="tel" name="phone" id="phone" placeholder="请输入手机" class="form-control" />
 											</div>
 											<div class="col-md-3"></div>
 										</div>
@@ -81,7 +81,7 @@
 										<div class="form-group">
 											<label for="contact_tel" class="control-label col-md-3  col-sm-3 col-xs-4"><b class="red">*</b>联系人电话：</label>
 											<div class="col-md-6  col-sm-9 col-xs-8">
-												<input type="number" name="contact_tel" id="contact_tel" class="form-control" placeholder="请输入联系人电话" />
+												<input type="tel" name="contact_tel" id="contact_tel" class="form-control" placeholder="请输入联系人电话" />
 											</div>
 											<div class="col-md-3"></div>
 										</div>
@@ -186,7 +186,7 @@
 								<div class="form-group">
 									<label for="home_phone" class="control-label col-md-3 col-sm-3 col-xs-4">住宅电话：</label>
 									<div class="col-md-6 col-sm-9 col-xs-8">
-										<input type="number" id="home_phone" name="home_phone" placeholder="请输入住宅电话" class="form-control" />
+										<input type="tel" id="home_phone" name="home_phone" placeholder="请输入住宅电话" class="form-control" />
 									</div>
 									<div class="col-mnd-3"></div>
 								</div>
@@ -229,8 +229,8 @@
 						</form>
 					</div>
 					<div class="btn-wrap">
-						<a href="javascript:;" class="btn btn-default prev-step">上一步</a>
-						<a href="javascript:;" class="btn btn-default next-step" position="thirdStep">下一步</a>
+						<a href="javascript:;" class="btn btn-default btn-lg prev-step">上一步</a>
+						<a href="javascript:;" class="btn btn-default btn-lg next-step" position="thirdStep">下一步</a>
 					</div>
 					</div>
 				</div>

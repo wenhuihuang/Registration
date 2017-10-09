@@ -148,7 +148,7 @@ table{
 	text-align: center;
 }
 .control-label input[type="radio"]{
-	margin-top:10px;
+	/* margin-top:10px; */
 }
 
 .logo{
@@ -175,9 +175,12 @@ table{
 	vertical-align: middle;
 	padding:0 10px;
 	width:auto;
-	margin-top:32px;
+	margin-top:4px;
 	color: #333;
     text-decoration: none;
+}
+#xs-menu-btn .iconfont{
+	font-size: 32px;
 }
 .menu-btn-wrap{
 	position: relative;
@@ -487,7 +490,7 @@ h6{
 		-moz-box-shadow: 0px 0px 4px 1px #ccc;
 		-ms-box-shadow: 0px 0px 4px 1px #ccc;
 	}
-	.xs-right-menu-header .iconfont{
+	.xs-right-menu-header .close-menu{
 		position: absolute;
 		right:20px;
 		top:10px;
@@ -498,6 +501,9 @@ h6{
 	}
 	div.header .xs-header-middle{
 		margin-top:22px;
+	}
+	.md-right-content{
+		padding-top:20px;
 	}
 }
 /* 平板 */
@@ -517,6 +523,9 @@ h6{
 		font-weight: bold;
 		line-height: 80px;
 	}
+	.header-name{
+		margin-right:5px;
+	}
 }
 @media only screen and (min-width: 992px){
 	.title{
@@ -528,36 +537,39 @@ h6{
 		margin-left:2px;
 		margin-right:2px;
 	}
-	.md-left-menu .row .btn{
+	/* .md-left-menu .row .btn{
 		width:210px;
-	}
+	} */
 }
 @media only screen and (min-width: 1200px) {
 	.container{
 		/*background: yellow;*/
 	}
+	.md-left-menu{
+		width:380px;
+	}
 	.md-left-menu .row .btn{
-		width:270px;
-		padding-left:50px;
+		/* width:270px;
+		padding-left:50px; */
 	}
 }
 @media only screen and (min-width: 1400px) {
 	.container{
 		/*background: yellow;*/
 	}
-	.md-left-menu .row .btn{
+	/* .md-left-menu .row .btn{
 		width:300px;
 		padding-left:60px;
-	}
+	} */
 }
 @media only screen and (min-width: 1700px) {
 	.container{
 		/*background: yellow;*/
 	}
-	.md-left-menu .row .btn{
+	/* .md-left-menu .row .btn{
 		width:400px;
 		padding-left:60px;
-	}
+	} */
 }
 
 

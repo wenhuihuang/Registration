@@ -71,11 +71,11 @@
 
 					for (var i = 0; i < json.length; i++) {
 						ele_array.push('<tr>')
-						ele_array.push('<td>'+json[i].name+'</td>')
-						ele_array.push('<td>'+json[i].time+'</td>')
-						ele_array.push('<td>'+json[i].teacher+'</td>')
-						ele_array.push('<td>'+json[i].people+'</td>')
-						ele_array.push('<td class="money-color">'+json[i].tuition+'</td>')
+						ele_array.push('<td>' + json[i].name + '</td>')
+						ele_array.push('<td>' + json[i].time + '</td>')
+						ele_array.push('<td>' + json[i].teacher + '</td>')
+						ele_array.push('<td>' + json[i].people + '</td>')
+						ele_array.push('<td class="money-color">' + json[i].tuition + '</td>')
 						ele_array.push('<td><a href="javascript:;" class="btn btn-orange">选择</a></td>')
 						ele_array.push('<td><a href="javascript:;" class="btn btn-primary">查看</a></td>')
 						ele_array.push('</tr>')
@@ -93,9 +93,9 @@
 <body>
 	<div class="container-fluid">
 		<div class="con-wrap">
-			<div class="con-title hidden-xs">
+			<!-- <div class="con-title hidden-xs">
 				<h3>网络报名</h3>
-			</div>
+			</div> -->
 			<div class="con-content">
 				<div class="step"><span>第三步：选择课程</span><a href="index.html">[点击返回首页]</a></div>
 				<div class="main-content">
@@ -192,13 +192,22 @@
 											</tr>
 										</thead>
 										<tbody class="select-tbody">
-											<tr>
-												<td>16中医养生</td>
+											<tr id="course-9">
+												<td>9中医养生</td>
 												<td>星期四上午</td>
 												<td>叶龙霖</td>
 												<td>未满</td>
 												<td class="money-color">0</td>
-												<td><a href="javascript:;" class="btn btn-orange">选择</a></td>
+												<td><a href="javascript:;" class="btn btn-orange" onclick="addCourse(9)">选择</a></td>
+												<td><a href="javascript:;" class="btn btn-primary">查看</a></td>
+											</tr>
+											<tr id="course-12">
+												<td>12中医养生</td>
+												<td>星期四上午</td>
+												<td>叶龙霖</td>
+												<td>未满</td>
+												<td class="money-color">0</td>
+												<td><a href="javascript:;" class="btn btn-orange" onclick="addCourse(12)">选择</a></td>
 												<td><a href="javascript:;" class="btn btn-primary">查看</a></td>
 											</tr>
 										</tbody>
@@ -222,15 +231,24 @@
 											</tr>
 										</thead>
 										<tbody class="select-tbody-yet">
-											<tr>
-												<td>16中医养生</td>
+											<tr id="course-14">
+												<td>14中医养生</td>
 												<td>星期四上午</td>
 												<td>叶龙霖</td>
 												<td>未满</td>
 												<td class="money-color">0</td>
-												<td><a href="javascript:;" class="btn btn-default">取消</a></td>
+												<td><a href="javascript:;" class="btn btn-default" onclick="cancelCourse(14)">取消</a></td>
 												<td><a href="javascript:;" class="btn btn-primary">查看</a></td>
 											</tr>
+											<tr id="course-15">
+													<td>15中医养生</td>
+													<td>星期四上午</td>
+													<td>叶龙霖</td>
+													<td>未满</td>
+													<td class="money-color">0</td>
+													<td><a href="javascript:;" class="btn btn-default" onclick="cancelCourse(15)">取消</a></td>
+													<td><a href="javascript:;" class="btn btn-primary">查看</a></td>
+												</tr>
 										</tbody>
 										<tfoot>
 											<tr>
@@ -257,5 +275,50 @@
 		</div>
 	</div>
 </body>
+<script>
+	function addCourse(id) {
+		var tbody = $('.select-tbody-yet');
+		// $.ajax({
+
+		// })
+
+		//如果成功执行
+		$('#course-' + id).remove();
+		var ele_array = [];
+		ele_array.push('<tr id="course-' + id + '">')
+		ele_array.push('<td>'+id+'中医养生</td>')
+		ele_array.push('<td>星期四上午</td>')
+		ele_array.push('<td>叶龙霖</td>')
+		ele_array.push('<td>未满</td>')
+		ele_array.push('<td class="money-color">0</td>')
+		ele_array.push('<td><a href="javascript:;" class="btn btn-default" onclick="cancelCourse('+id+')">取消</a></td>')
+		ele_array.push('<td><a href="javascript:;" class="btn btn-primary">查看</a></td>')
+		ele_array.push('</tr>')
+
+		tbody.append(ele_array.join(''))
+	}
+	function cancelCourse(id) {
+		var tbody = $('.select-tbody');
+		// $.ajax({
+
+		// })
+
+		//如果成功执行
+		$('#course-' + id).remove();
+		var ele_array = [];
+		ele_array.push('<tr id="course-' + id + '">')
+		ele_array.push('<td>'+id+'中医养生</td>')
+		ele_array.push('<td>星期四上午</td>')
+		ele_array.push('<td>叶龙霖</td>')
+		ele_array.push('<td>未满</td>')
+		ele_array.push('<td class="money-color">0</td>')
+		ele_array.push('<td><a href="javascript:;" class="btn btn-orange" onclick="addCourse('+id+')">选择</a></td>')
+		ele_array.push('<td><a href="javascript:;" class="btn btn-primary">查看</a></td>')
+		ele_array.push('</tr>')
+
+		tbody.append(ele_array.join(''))
+	}
+
+</script>
 
 </html>

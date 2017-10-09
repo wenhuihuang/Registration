@@ -9,14 +9,38 @@
     <link rel="stylesheet" type="text/css" href="css/Registration.css" />
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/Registration.js"></script>
+    <style>
+        @media only screen and (max-width: 768px) {
+            div.header .xs-header-middle {
+                margin-top: 33px;
+            }
+            .step {
+                top: 106px;
+            }
+
+            .main-content {
+                top: 154px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <div class="header container-fluid">
+
+        <div class="row">
+            <div class="col-md-1 col-sm-2 col-xs-3"><img class="logo" src="./img/logo.png" alt=""></div>
+            <div class="col-md-6 col-sm-5 col-xs-7 xs-header-middle">
+                <p class="title">广州市老年干部大学网络报名</p>
+            </div>
+
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="con-wrap">
-            <div class="con-title hidden-xs">
+            <!-- <div class="con-title hidden-xs">
                 <h3>网络报名</h3>
-            </div>
+            </div> -->
             <div class="con-content">
                 <div class="step"><span>第一步：请选择报名类型</span></div>
                 <div class="main-content">
