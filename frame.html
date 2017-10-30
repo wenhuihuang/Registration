@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=renderer content=webkit>
     <title>网络报名</title>
     <!--[if lt IE 9]>
     <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
@@ -30,12 +31,13 @@
             $('.body').css({ 'height': bodyHeight })
             $('.body-height-fluid').css({ 'height': bodyHeight })
             var windowWidth = $(window).width();
+            var containerWidth = $('.container').outerWidth()
             if (windowWidth >= 1190) {
                 $('.md-left-menu').css({ 'width': '250px' })
-                $('.md-right-content').css({ 'width': windowWidth - 250 })
+                $('.md-right-content').css({ 'width': containerWidth - 250 })
             }else if(windowWidth > 768 && windowWidth < 1200){
                 $('.md-left-menu').css({ 'width': '230px' })
-                $('.md-right-content').css({ 'width': windowWidth - 230 })
+                $('.md-right-content').css({ 'width': containerWidth - 230 })
             } 
             else {
                 $('.md-left-menu').removeAttr('style')
@@ -76,7 +78,7 @@
 </head>
 
 <body>
-    <div class="header container-fluid">
+    <div class="header container">
 
         <div class="row">
             <div class="col-md-1 col-sm-2 col-xs-3"><img class="logo" src="./img/logo.png" alt=""></div>
@@ -97,7 +99,7 @@
             </div>
         </div>
     </div>
-    <div class="body container-fluid">
+    <div class="body container">
         <div class="row body-height-fluid">
             <div class="col-md-3 col-sm-3 xs-right-menu md-left-menu">
                 <div class="xs-right-menu-header visible-xs-block">

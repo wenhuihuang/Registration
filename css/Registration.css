@@ -193,10 +193,10 @@ table{
 	position: relative;
 	z-index: 2;
 	border-bottom:1px solid #ccc;
-	box-shadow: 0px 0px 4px 1px #ccc;
-	-webkit-box-shadow: 0px 0px 4px 1px #ccc;
-	-moz-box-shadow: 0px 0px 4px 1px #ccc;
-	-ms-box-shadow: 0px 0px 4px 1px #ccc;
+	box-shadow: 0px 1px 4px #ccc;
+	-webkit-box-shadow: 0px 1px 4px #ccc;
+	-moz-box-shadow: 0px 1px 4px #ccc;
+	-ms-box-shadow: 0px 1px 4px #ccc;
 }
 .body .body-height-fluid{
 	
@@ -505,6 +505,11 @@ h6{
 	.md-right-content{
 		padding-top:20px;
 	}
+	.xs-btn-group .btn{
+		padding:6px 12px;
+		margin:0 8px !important;
+		font-size:14px;
+	}
 }
 /* 平板 */
 @media only screen and (min-width:768px){
@@ -517,6 +522,13 @@ h6{
 		background:rgba(0, 0, 0, .6);
 		z-index:5;
 		display:none !important;
+	}
+	.md-right-content{
+		padding-right:0;
+	}
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.title{
 		font-size: 17px;
@@ -537,6 +549,13 @@ h6{
 		margin-left:2px;
 		margin-right:2px;
 	}
+	.md-right-content{
+		padding-right:0;
+	}
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	/* .md-left-menu .row .btn{
 		width:210px;
 	} */
@@ -544,13 +563,21 @@ h6{
 @media only screen and (min-width: 1200px) {
 	.container{
 		/*background: yellow;*/
+		width:1200px;
 	}
 	.md-left-menu{
-		width:380px;
+		/* width:380px; */
 	}
 	.md-left-menu .row .btn{
 		/* width:270px;
 		padding-left:50px; */
+	}
+	.md-right-content{
+		padding-right:0;
+	}
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 @media only screen and (min-width: 1400px) {
