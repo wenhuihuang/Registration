@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>招生简章</title>
+	<link rel="stylesheet" href="bootstrap_3.3.5/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/Registration.css" />
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/Registration.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="container con-wrap">
+			<div class="con-content clearfix">
+				<div class="step">
+					<div class="con-title">
+						<h3 style="margin-top:0;line-height:44px;color:#fff;">招生简章</h3>
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="article-wrap clearfix">
+						<h5 class="article-title" style="text-align: center;">福建老年大学2015-2016学年招生简章</h5>
+						<div class="article-content">
+							<p>一、 招生对象 地方和部队离退休干部、职工和社会老年人。</p>
+							<p>二、入学条件</p>
+							<p>1、年龄范围：一般学科男55—79周岁，女50—79周岁，舞蹈学科年龄不超过70周岁。</p>
+							<p>2、健康状况：身心健康，行动自如，能坚持正常参加学习。</p>
+							<p>三、报名方式、步骤</p>
+							<p>1、方式</p>
+							<p>全部采用网络报名，报名之后可直接网银缴费也可通过网络预约到学校现场缴费。</p>
+							<p>2、步骤</p>
+							<p>第一步：登入福建老年大学网站（网址：www.fjlndx.cn）。</p>
+							<p>第二步：点击网络报名平台入口，根据提示操作并选择班级。</p>
+							<p>第三步：选择“网银支付”或“现场支付”缴纳学费。网银支付学费的发票，上课后在班级统一分发；预约现场缴费的学员，务必在规定时限内携带二代身份证或学员证，按照预约时间、地点缴费。</p>
+							<p>每位学员一般可报3个班次（但在前学年平均出勤率低于50%的限报1个班次，高于90%的本人申请在开学第一周可增报1个C类课程班次）；A类课程每人每门限报1个班次；参加A类课程学习已结业的学员不得再报名该课程所开设的其它班次学习。</p>
+							<p>四、报名时间</p>
+							<p> 1.升级班报名</p>
+							<p>2015年6月20日（周六）—24日（周三）（每天8：00-22：00）。符合升级条件的学员在此时间内未办理报名和缴费手续的，视为自动放弃升级。</p>
+							<p>2.新班（含升级班剩余名额）报名</p>
+							<p>2015年6月28日（周日）—6月29日（周一）（每天8：00-17：00）。报名后请在预约时间内缴费，逾期未缴费名额自动返回。</p>
+							<p>五、其他事项</p>
+							<p> 1、上课时间：本学年第一学期上课时间为2015年9月14日，各班按课程表陆续开始上课，上午9：00-10：40，下午2：30-4：10。节假日或遇台风、地震等自然灾害，按政府有关部门规定执行。</p>
+							<p>2、选学《英语口语一年级》的学员要有英语基础；选学《图像与摄影一年级》的学员要有电脑图像处理基础。《古典身韵一年级》和《民舞研修一年级》需通过考试方能报名，考试时间定于6月8日上午9：00-11：00。</p>
+							<p>3、网上缴费方式：支持支付宝及微信支付。</p>
+							<p>4、所缴学费当日进入财政专户，一经上缴不能退款；报名后不得更改姓名和学科，不办理转班、休学。</p>
+							<p>5、学校举办的政治时事大课及专题讲座，欢迎学员参加不另行收费。</p>
+						</div>
+					</div>
+					<div class="agree-wrap"><input type="checkbox" id="agree" style="margin-right:6px;" /><label for="agree">我已仔细阅读并同意遵守</label></div>
+					<div class="agree-btn-wrap"><button class="btn btn-default agree-submit">开始报名</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function () {
+
+			$('#agree').click(function(){
+				if($('#agree').is(':checked')){
+					countDown('.agree-submit',10,'后下一步');
+				}else{
+					clearInterval(timer)
+					$('.agree-submit').removeAttr('disabled').text('下一步')
+				}
+			})
+
+			var top = $('.agree-submit').offset().top;
+			var wh = $(window).height()
+			// $(window).scroll(function () {
+			// 	var scrollTop = $(window).scrollTop();
+			// 	if (scrollTop + wh > top && $('.agree-submit:enabled').length) {
+			// 		countDown('.agree-submit',10,'后下一步')
+			// 	}
+			// })
+
+		})
+	</script>
+</body>
+
+</html>
